@@ -6,7 +6,7 @@ cases_num = 0
 n = 0
 num_of_one_case = []
 case_data = []
-with open(r'C:\Users\gaozb\Desktop\A-large-practice.in', 'r') as f:
+with open(r'..\data\A-small-practice.in', 'r') as f:
     data = f.readlines()  # txt中所有字符串读入data
     for line in data:
         linedata = line.split()
@@ -30,8 +30,8 @@ def cal(arr):
     )
 
 
-# test = [2, 2, 3, 4, 10]
-with open(r'C:\Users\Gaozb\Desktop\A-small-practice.out', 'w') as f:
+
+with open(r'.\A-small-practice.out', 'w') as f:
     for sample in range(len(case_data)):
         foot_np = np.array(case_data[sample])[np.array(list(combinations(np.arange(len(case_data[sample])),3)))]
         print(sample)

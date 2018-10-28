@@ -24,8 +24,8 @@ int main()
 	vector<long long int> tmp_vector;
 	int tmp;
 	std::string line;
-	std::ofstream outfile("c:\\users\\gaozb\\desktop\\a-large-practice.out");
-	std::ifstream t("c:\\users\\gaozb\\desktop\\a-large-practice.in"); //读文件ifstream,写文件ofstream，可读可写fstream
+	std::ofstream outfile("..\\data\\a-large-practice.out");
+	std::ifstream t("..\\data\\a-large-practice.in"); //读文件ifstream,写文件ofstream，可读可写fstream
 	std::stringstream buffer;
 	//buffer << t.rdbuf();
 	//std::string s = buffer.str();

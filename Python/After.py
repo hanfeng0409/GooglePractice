@@ -2,7 +2,7 @@ cases_num = 0
 num_of_one_case = []
 n=0
 case_data = []
-with open(r'C:\Users\Gaozb\Desktop\A-small-practice.in', 'r') as f:
+with open(r'..\data\A-small-practice.in', 'r') as f:
     data = f.readlines()  # txt中所有字符串读入data
     for line in data:
         linedata = line.split()
@@ -15,7 +15,7 @@ with open(r'C:\Users\Gaozb\Desktop\A-small-practice.in', 'r') as f:
             num_of_one_case.append(int(numbers_float[0]))
         n += 1
 
-with open(r'C:\Users\Gaozb\Desktop\A-small-practice.out', 'w') as f:
+with open(r'.\A-small-practice.out', 'w') as f:
     for sample in range(len(case_data)):
         a,b = 0,1
         ans = 0
@@ -35,5 +35,5 @@ with open(r'C:\Users\Gaozb\Desktop\A-small-practice.out', 'w') as f:
                 d[int(arr_sorted[a])]=1
 
         print(sample,ans)
-        f.write('Case #' + str(int(sample+1))+ ': '+str(int(ans))+'\n')
+        f.write('Case #%d: %d\n' %(int(sample+1),int(ans)))
 
